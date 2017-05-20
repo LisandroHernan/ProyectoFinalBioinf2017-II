@@ -11,7 +11,7 @@ Blast a las secuencias
 
 Este paso de mi trabajo sigue detenido. El problema en el avance dos era la instalación de blast en un contenedor de Docker, sin embargo eso ya lo resolví.Esta pendiente correr mis secuencias para obtener resultados desde la línea de comando.
 
-Ya descargue secuencias de otros trabajos publicados para los géneros de algas pardas de mi proyecto de investigación, los cuales incluyen las secuencias obtenidas por Díaz-Martínez *et al*. (2016)[http://www.phycologia.org/doi/pdf/10.2216/16-15.1] y Lozano (2016), y otras secuencias de Genbank.
+Ya descargue secuencias de otros trabajos publicados para los géneros de algas pardas de mi proyecto de investigación, los cuales incluyen las secuencias obtenidas por [Díaz-Martínez *et al*. (2016)](http://www.phycologia.org/doi/pdf/10.2216/16-15.1) y Lozano (2016), y otras secuencias de Genbank.
 
 Tengo las matrices de las secuencias tanto para COI como para psbA.
 
