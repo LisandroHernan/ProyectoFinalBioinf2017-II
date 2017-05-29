@@ -8,27 +8,32 @@ En el repositorio se incluyen los siguientes directorios
 
 Se encuentran subdirectorios llamados:
 
-datain: En este se encuentran las matrices de datos para los marcadores COI--MatCOI y psbA--MatpsbA por separado que incluye tanto datos obtenidos en el proyecto de investigación como en los trabajos realizados por Díaz-Martínez (2016) y Lozano (2016). Las cuales son secuencias ensambladas y listas para ser alineadas.
+Seqin: En este se encuentran las matrices de datos para los marcadores **DictyotalesCOI** y ** DictyotalespsbA** por separado que incluye tanto datos obtenidos en el proyecto de investigación como en los trabajos realizados por Díaz-Martínez (2016) y Lozano (2016). Las cuales son secuencias ensambladas y listas para ser alineadas.
 
-dataout: El subdirectorio incluye matrices con las secuencias alineadas, se incluye las matrices de distancia obtenida para los análisis posteriores.
+dataout: El subdirectorio incluye matrices con las secuencias alineadas, llamados **DictyotalesCOIAling.clustal** y **DictyotalespsbAAling.clustal**, el alineamiento se obtuvo con el software **clustalw**.
 		 
 
 **meta**
 
-En este directorio se encuentra una tabla en la cual se encuentran las localidades de recolecta, condiciones ambientales, etc, que será para graficar un mapa en el cual se indiquen el sitio de recolecta para cada especie.
+En este directorio se encuentra un archivo csv con el nombre de **Dictyotales2**, tabla en la cual se encuentran las localidades de recolecta, etc, que será para graficar un mapa en el cual se indiquen el sitio de recolecta para cada especie.
+
+Aquí mismo se encuentran dos archivos con el GI de NCBI de cada una de las secuencias utilizadas en el presente análisis AccesoCOI, AccesospsbA
 
 **bin**
 
 
-Los scripts que se han utilizado y que se utilizaran para obtener todos los resultados se encuentran aquí
+Los scripts que se han utilizaron  para obtener todos los resultados se encuentran aquí
 
-Blast (aun no consigo correrlo), este script contiene como instalar el software en un contenedor de Docker y correrlo con las secuencias en formato fasta, secuencias obtenidas en el proyecto de investigación
-Seq, contiene como descargar las secuencias de trabajos publicados como el de Díaz-Martínez (2016) y pegarlas a un archivo que ya se tiene con las secuencias del estudio.
-Align este script presenta como alinear las matriz de secuencias del presente estudio junto con las secuencias de Díaz-Martínez
 
-NeiJoi en este script se describirá como se debe realizar el análisis de Neighbor-Joining (NJ) para muestras con secuencias Sanger
+ScriptDeseq, contiene como descargar las secuencias de trabajos publicados como el de Díaz-Martínez (2016) y otras de NCBI así como pegarlas a un archivo que ya se tiene con las secuencias del estudio para cada gen (COI y psbA).
 
-MapRec, sirve para realizar un mapa el cual presentara los sitios de recolecta por especie.
+ScriptAlign este script presenta como alinear las matriz de secuencias del presente estudio junto con las secuencias de Díaz-Martínez y otras descargadas de NCBI con el software clustalw desde la terminal.
+
+ScriptCOI_MxdisNJ en este script detalla como se debe cargar el archivo de alineamiento, generar una matriz de distancia con la libreria seqinr y realizar el análisis de Neighbor-Joining (NJ) para muestras con secuencias Sanger  con la librería ape para el gen COI.
+
+ScriptpsbA_MxdisNJ en este script detalla como se debe cargar el archivo de alineamiento, generar una matriz de distancia con la libreria seqinr y realizar el análisis de Neighbor-Joining (NJ) para muestras con secuencias Sanger  con la librería ape para el gen psbA.
+
+ScriptMapaAlgas, sirve para realizar un mapa el cual presentara los sitios de recolecta por especie.
 
 
 **figures**
